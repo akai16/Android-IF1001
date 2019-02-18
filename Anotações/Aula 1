@@ -1,0 +1,19 @@
+O que é Android?
+  Uma plataforma, pilha de softwares
+
+
+
+
+HAL - Hardware Abstraction Layer
+    Fornece interfaces padronizadas para interagir com diferentes especificações de Hardware
+
+ART - Android Runtime
+    Ambiente virtual onde rodam as aplicações Android, parecido com JVM 
+    Inclui as bibliotecas
+
+
+Os pontos de entrada de uma app android são vários.
+ 
+
+Um problema inerente do desenvolvimento android é a bateria, rede, memória, processamento.
+Deve-se lembrar dessas restrições enquanto programa.
