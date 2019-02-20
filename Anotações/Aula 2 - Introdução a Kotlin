@@ -1,0 +1,45 @@
+Introdução a Kotlin
+
+ - Linguagem que tem a JVM como Target. Gera bytecode JAVA
+ - Tudo que opera Java é interoperavel com Kotlin
+ - Bibliotecas Java são acessiveis por Kotlin (Interoperaveis)
+  
+  Interpretador Online
+    https://try.kotlinlang.org/
+
+---------------------------------------------------------------
+Exemplos de codigo:
+
+data class Person(val name: String, val age: Int? = null)
+
+/* A chave reservada "data" tem a função de mostrar
+    que classe modela alguma coisa, nesse caso Pessoa.
+    Como por exemplo uma Classe com atributos getter and setters. 
+    Conceito parecido com POJO em Java  */
+
+Operador Elvis ?:
+    it.age ?: 0
+    // Se "it.age" for "null" retorna 0
+
+
+class Rectangle(val height: Int, val width: Int) {
+    val isSquare: Boolean
+        get() {
+            return height == width
+        }
+}
+
+/* a função "get" está atrelada a propriedade isSquare e será
+executada sobre demanda */
+
+
+interface Expr
+class Num(val value: Int) : Expr
+
+/* A classe "num" implementa a interface "Expr" */
+
+-----------------------------------------
+
+
+Kotlin é OPEN SOURCE :)
+
