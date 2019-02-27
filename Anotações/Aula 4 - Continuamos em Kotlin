@@ -1,0 +1,6 @@
+- Operador safety ?
+    s?.lenght // Se "s" for nulo, eu nao continuo (nao chamo o resto dos métodos).
+
+- Um projeto android pode ter modulos, modulos sao ligeiras modificações entre 
+as versões.
+
