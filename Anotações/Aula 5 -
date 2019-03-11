@@ -1,0 +1,13 @@
+Activity - Bloco fundamental de interface com o usuário, em geral
+           uma tela;
+
+
+AppCompatActivity - 
+
+Gradle - Ferramenta que diz como compilar a aplicação, processo automatizado
+
+Widgets - Elementos ou componentes da Interface - "A Single Interaction Point"
+
+Container - Elementos que "segura" outros widgets e containers
+
+
