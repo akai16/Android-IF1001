@@ -1,0 +1,32 @@
+    Lambda expressions são "function literals", ou seja, funções que não
+foram declaradas, mas podem sem usadas como uma expressão
+Exemplo:
+    max(strings, { a,b -> a.length < b.length })
+
+    Isto corresponde a
+    fun compare(a: String, b:String) : Boolean = a.length < b.length
+
+
+Uma função Lamba sempre é rodeada por chaves "{}"
+Os parametros vão dentro das chaves e o corpo vai depois do 
+sinal de "->". Se o retorno não for do tipo Unit, a ultima expressão
+será considerada o valor de retorno.
+
+Em Kotlin, existe uma convenção de que se o ultimo parametro da
+função for um lamba, este pode ser colocado no lado de fora dos
+parenteses.
+Exemplo:
+    val product = items.fold(1) { acc, e -> acc * e }
+
+Se o Lamba for o unico argumento, os parenteses podem ser omitidos
+Exemplo:
+    run { println("...") }
+
+É comum que uma expressão lamba só tenha 1 argumento,
+nesses cassos é permitido não declarar o parametro e omitir o 
+sinal de "->". O parametro então pode ser acessado usando o nome
+"it".
+Exemplo:
+    ints.filter { it % 2 == 0 }  //Function Type of (it: Int) -> Boolean
+
+
