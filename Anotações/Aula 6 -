@@ -1,0 +1,8 @@
+dVantagens de XML
+    - Separar a apresentação visual do corportamento lógico
+    - Usar o editor da IDE
+
+XML Inflation - Pegar o XML e transformá-lo em um objeto Java
+
+Adapter - Pega um objeto (Pessoa) e adapta para uma view.
+ArrayAdapter<String>(context,android.R.layout.simple_list_item_1, pessoas_list)
