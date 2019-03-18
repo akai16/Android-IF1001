@@ -2,3 +2,5 @@
 
 Data class em Kotlin - http://blog.caelum.com.br/eu-preciso-mesmo-de-uma-data-class/
 Lambdas e setOnClickListener - https://antonioleiva.com/lambdas-kotlin-android/
+
+AsyncTask - https://www.c-sharpcorner.com/article/how-to-do-asynctask-in-kotlin/
