@@ -3,6 +3,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:padding="16dp"
         android:orientation="vertical"
 >
 
@@ -10,6 +11,7 @@
             android:id="@+id/quote_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="20sp"
             android:text="Quote"
     />
 
@@ -17,5 +19,11 @@
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:text="Author"/>
+
+
+    <Button android:layout_width="match_parent"
+            android:id="@+id/button_quote"
+            android:text="Get Quote"
+            android:layout_height="wrap_content"/>
 
 </LinearLayout>
