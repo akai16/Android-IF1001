@@ -13,21 +13,21 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val animeCharacterCall = RetrofitInitializer().animeCharacterService().getSingleCharacter(1)
+        val randomQuoteCall = RetrofitInitializer().quoteService().getRandomQuote()
 
-        animeCharacterCall.enqueue(object : Callback<AnimeCharacter> {
-            override fun onResponse(call: Call<AnimeCharacter>?, response: Response<AnimeCharacter>?) {
+        randomQuoteCall.enqueue(object : Callback<List<Quote>> {
+            override fun onResponse(call: Call<List<Quote>>?, response: Response<List<Quote>>?) {
                 response?.body()?.let {
-                    val animeCharacter: AnimeCharacter? = it
+                    val quote: Quote? = it[0]
 
-                    character_name.text = animeCharacter?.attributes?.name
-                    character_description.text = animeCharacter?.attributes?.description
+                    quote_text.text = quote?.content
+                    author.text = quote?.title
                 }
             }
 
-            override fun onFailure(call: Call<AnimeCharacter>?, t: Throwable?) {
-                character_name.text = "Erro na conexão"
-                character_description.text=""
+            override fun onFailure(call: Call<List<Quote>>?, t: Throwable?) {
+                quote_text.text = "Erro na conexão"
+                author.text=""
             }
         })
     }

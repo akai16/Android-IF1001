@@ -5,11 +5,10 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitInitializer {
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://kitsu.io/api/edge")
+        .baseUrl("http://quotesondesign.com/wp-json/")
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
-
-    fun animeCharacterService() = this.retrofit.create(AnimeCharacterService::class.java)
+    fun quoteService() = this.retrofit.create(QuoteService::class.java)
 
 }
