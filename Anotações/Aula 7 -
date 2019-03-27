@@ -1,0 +1,14 @@
+Intents implicitos que nao são suportados por nenhuma aplicação
+geram uma exception quando não tratada.
+
+if (intent.resolveActivity(getPackageManager()) != null) {
+    
+    startActivity(intent);
+}
+
+//Criar intent para mostrat janela de escolha (Versão MUITO OLD)
+Intent chooser = Intent.createChooser(i,t)
+
+
+
+Intent Filters - Processo de Resolução de Intents
